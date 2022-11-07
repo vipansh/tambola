@@ -7,7 +7,7 @@ type CopyInviteCodeProps = {
 };
 
 const CopyInviteCode = ({ code }: CopyInviteCodeProps) => {
-  const [, copy] = useCopyToClipboard();
+  const [calue, copyFn] = useCopyToClipboard();
 
   return (
     <div className="flex">
